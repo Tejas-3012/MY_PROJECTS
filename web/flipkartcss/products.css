@@ -1,0 +1,272 @@
+/*
+
+  THIS FILE CONTAINS THE
+  COMPLETE PRODUCT SECTION
+
+  IT INCLUDES
+
+  1. PRODUCT GRID
+  2. PRODUCT CARD
+  3. PRODUCT IMAGE
+  4. PRODUCT NAME
+  5. OFFER
+  6. PRICE
+
+*/
+
+.product-grid
+{
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  column-gap: 18px;
+
+  row-gap: 18px;
+
+  background-color: white;
+
+  margin-left: 15px;
+  margin-right: 15px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  margin-bottom: 20px;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*
+
+  EVERY PRODUCT IS A
+
+  SEPARATE CARD
+
+*/
+
+.product-preview
+{
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230,230,230);
+
+  border-radius: 6px;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  transition: box-shadow 0.25s,
+              transform 0.25s;
+
+  background-color: white;
+}
+
+/*
+
+  THIS MAKES THE
+
+  PRODUCT CARD
+
+  LOOK SLIGHTLY RAISED
+
+*/
+
+.product-preview:hover
+{
+  box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+
+  transform: translateY(-3px);
+
+  cursor: pointer;
+}
+
+.product-image-row
+{
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  height: 170px;
+
+  margin-bottom: 18px;
+}
+
+/*
+
+  OBJECT FIT
+
+  PREVENTS IMAGE
+
+  FROM STRETCHING
+
+*/
+
+.product-image
+{
+  width: 100%;
+
+  max-width: 150px;
+
+  max-height: 150px;
+
+  object-fit: contain;
+
+  transition: transform 0.3s;
+}
+
+/*
+
+  ONLY PRODUCT IMAGE
+
+  ZOOMS SLIGHTLY
+
+  WHEN CARD IS HOVERED
+
+*/
+
+.product-preview:hover .product-image
+{
+  transform: scale(1.08);
+}
+
+.product-info
+{
+  text-align: center;
+
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product-name
+{
+  font-family: Roboto, Arial;
+
+  font-size: 15px;
+
+  font-weight: 500;
+
+  line-height: 22px;
+
+  margin-bottom: 10px;
+
+  color: rgb(33,33,33);
+}
+
+.product-offer
+{
+  font-family: Roboto, Arial;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: rgb(56,142,60);
+
+  margin-bottom: 8px;
+}
+
+/*
+
+  GREEN COLOR
+
+  IS USED FOR
+
+  OFFER TEXT
+
+  JUST LIKE
+
+  FLIPKART
+
+*/
+
+.product-price
+{
+  font-family: Roboto, Arial;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  color: rgb(33,33,33);
+}
+
+/*
+
+  THIS MAKES
+
+  EVERY PRODUCT
+
+  HAVE EQUAL HEIGHT
+
+*/
+
+.product-preview
+{
+  min-height: 285px;
+}
+
+/*
+
+  IF PRODUCT NAME
+
+  BECOMES LONG
+
+  IT DOES NOT
+
+  TOUCH THE PRICE
+
+*/
+
+.product-name
+{
+  min-height: 45px;
+}
+
+/*
+
+  GRID AUTOMATICALLY
+
+  ADJUSTS ON
+
+  SMALLER SCREENS
+
+*/
+
+@media (max-width:1300px)
+{
+  .product-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:900px)
+{
+  .product-grid
+  {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:650px)
+{
+  .product-grid
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+}

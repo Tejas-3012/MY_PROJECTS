@@ -1,0 +1,126 @@
+/*
+
+  THIS FILE CONTAINS THE
+  COMPLETE CATEGORY SECTION
+
+  IT DISPLAYS ALL THE
+  SHOPPING CATEGORIES
+
+  HORIZONTALLY
+
+*/
+
+.category-section
+{
+  display: flex;
+
+  justify-content: space-evenly;
+
+  align-items: center;
+
+  background-color: white;
+
+  margin-top: 25px;
+
+  margin-left: 15px;
+  margin-right: 15px;
+
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  border-radius: 4px;
+}
+
+/*
+
+  EVERY CATEGORY CONTAINS
+
+  IMAGE
+
+  AND
+
+  CATEGORY NAME
+
+*/
+
+.category
+{
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  transition: transform 0.2s;
+}
+
+.category:hover
+{
+  transform: scale(1.06);
+}
+
+/*
+
+  THIS MAKES THE CATEGORY
+  IMAGE REMAIN INSIDE THE
+  FIXED SPACE
+
+*/
+
+.category-image
+{
+  height: 65px;
+
+  width: 65px;
+
+  object-fit: contain;
+
+  margin-bottom: 8px;
+}
+
+.category-name
+{
+  font-family: Roboto,Arial;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  color: rgb(33,33,33);
+
+  white-space: nowrap;
+}
+
+/*
+
+  ONLY THE TEXT COLOR CHANGES
+
+  WHEN USER HOVERS OVER
+
+  THE CATEGORY
+
+*/
+
+.category:hover .category-name
+{
+  color: rgb(40,116,240);
+}
+
+/*
+
+  THIS MAKES THE COMPLETE
+
+  CATEGORY SECTION LOOK
+
+  SEPARATED FROM THE
+
+  NEXT SECTION
+
+*/
+
+.category-section
+{
+  margin-bottom: 18px;
+}

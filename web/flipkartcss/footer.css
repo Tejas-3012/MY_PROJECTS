@@ -1,0 +1,99 @@
+/*
+
+  THIS FILE CONTAINS THE
+
+  COMPLETE FOOTER SECTION
+
+  OF THE WEBSITE
+
+*/
+
+.footer
+{
+  background-color: rgb(23,35,55);
+
+  margin-top: 25px;
+
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+/*
+
+  THIS IS THE FOOTER TEXT
+
+  DISPLAYED AT THE BOTTOM
+
+  OF THE WEBPAGE
+
+*/
+
+.footer
+{
+  font-family: Roboto, Arial;
+
+  font-size: 15px;
+
+  color: white;
+
+  font-weight: 400;
+}
+
+/*
+
+  WHENEVER USER HOVERS
+
+  ON THE FOOTER
+
+  THE TEXT CHANGES
+
+  TO LIGHT BLUE
+
+*/
+
+.footer:hover
+{
+  color: rgb(40,116,240);
+
+  cursor: pointer;
+}
+
+/*
+
+  LETTER SPACING
+
+  GIVES A CLEAN
+
+  LOOK TO THE
+
+  FOOTER TEXT
+
+*/
+
+.footer
+{
+  letter-spacing: 0.4px;
+}
+
+/*
+
+  THIS MAKES THE
+
+  FOOTER CONTENT
+
+  REMAIN AT THE
+
+  CENTER ALWAYS
+
+*/
+
+.footer
+{
+  text-align: center;
+}
